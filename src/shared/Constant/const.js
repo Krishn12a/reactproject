@@ -39,11 +39,14 @@ import cm8 from '../Images/cm8.jpeg'
 import cm9 from '../Images/cm9.jpeg'
 import cm10 from '../Images/cm10.jpeg'
 import courel1 from '../Images/Corel1.jpeg'
+import courel2 from '../Images/Corel2.jpeg'
+import courel3 from '../Images/Corel3.jpeg'
+import clogo from '../Images/image-removebg-preview.png'
 
 
 
 
 
 export const Multimedia ={
-    laptop,laptop1,laptop2,laptop3,laptop4,laptop5,laptop6,laptop7,laptop8,laptop9,tv1,tv2,tv3,tv4,tv5,tv6,tv7,tv8,tv9,tv10,mb1,mb2,mb3,mb4,mb5,mb6,mb7,mb8,mb9,mb10,cm1,cm2,cm3,cm4,cm5,cm6,cm7,cm8,cm9,cm10,courel1
+    laptop,laptop1,laptop2,laptop3,laptop4,laptop5,laptop6,laptop7,laptop8,laptop9,tv1,tv2,tv3,tv4,tv5,tv6,tv7,tv8,tv9,tv10,mb1,mb2,mb3,mb4,mb5,mb6,mb7,mb8,mb9,mb10,cm1,cm2,cm3,cm4,cm5,cm6,cm7,cm8,cm9,cm10,courel1,courel2,courel3,clogo
 }

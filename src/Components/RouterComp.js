@@ -7,6 +7,10 @@ import TvComp from "./Products/TvComp";
 import MobileComp from "./Products/MobileComp";
 import CameraComp from "./Products/CameraComp";
 import NavComp from "./NavComp";
+import Register from "./Register";
+import Login from "./Login";
+import AboutComp from "./AboutComp";
+import FooterComp from "./FooterComp";
 
 
 
@@ -17,11 +21,11 @@ class RouterComp extends Component {
             <div>
                 <BrowserRouter>
                     <div style={{width:'100%'}}>
-                        <div className='card border-primary'>
-                            <div className='card-header border-primary'>
+                        <div className='card border-primary' >
+                            <div className='card-header border-primary' style={{backgroundColor:'rgba(198,198,198,255)'}}>
                                 <NavComp></NavComp>
                             </div>
-                            <div className='card-body border-primary'>
+                            <div className='card-body border-primary 'style={{backgroundColor:'#E6b777'}} >
                            
                             <Routes>
                                 
@@ -33,10 +37,19 @@ class RouterComp extends Component {
                                     <Route path="Camera" element={<CameraComp></CameraComp>}></Route>
                                 </Route>
                                 <Route path="Home" element={<HomeComp></HomeComp>}></Route>
+                                <Route path="Register" element={<Register></Register>}></Route>
+                                <Route path="Signin" element={<Login></Login>}></Route>
+                                <Route path="Footer" element={<FooterComp></FooterComp>}>
+                                    <Route path="About" element={<AboutComp></AboutComp>}></Route>
+                                </Route>
                                 
                             </Routes>
                             </div>
-                            <div className='card-footer border-primary'></div>
+                            <div className='card-footer border-primary' style={{backgroundColor:'rgba(198,198,198,255)'}}>
+                                {/* <AboutComp></AboutComp> */}
+                                <FooterComp></FooterComp>
+
+                            </div>
                             
                         </div>
                     </div>

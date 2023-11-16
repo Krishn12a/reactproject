@@ -14,13 +14,13 @@ export class MenuComp extends Component {
                 <div className='container-fluid'>
 
                     <div className='row'>
-                    <div className='col-sm-2 border border-primary'>
+                    <div className='col-sm-2 border '>
                             <h3>userName</h3>
-                            <h3>Home</h3>
-                            <Link to={"Laptop"}>Laptops</Link><br/>
-                            <Link to={"Tv"}>Tv</Link><br/>
-                            <Link to={"Mobile"}>Mobile</Link><br/>
-                            <Link to={"Camera"}>Camera</Link>
+                            
+                            <Link to={"Laptop"} className='lnk'>Laptops</Link><br/>
+                            <Link to={"Tv"} className='lnk'>Tv</Link><br/>
+                            <Link to={"Mobile"} className='lnk'>Mobile</Link><br/>
+                            <Link to={"Camera"} className='lnk'>Camera</Link>
 
                            
                             

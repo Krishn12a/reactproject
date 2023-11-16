@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import {Multimedia} from '../shared/Constant/const'
 import './External.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 
@@ -11,17 +12,29 @@ export class NavComp extends Component {
     render() {
         return (
             <div>
-                <img src={Multimedia.clogo}  className='logo'/> &nbsp;&nbsp;
-                <span className='lognme'>Grace Electronics</span>
+                <div className='row'>
 
-                <Link to='Menu'>Menu</Link>
+                    <div className='col-sm-6'>
+                    <img src={Multimedia.clogo}  className='logo'/> &nbsp;&nbsp;
+                    <span className='lognme'>Grace Electronics</span>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <Link to='Menu' style={{fontSize:'x-large',textDecoration:'none',color:'#111150', fontWeight:'bold'}}><FontAwesomeIcon icon={faBars} /> Menu</Link>
+                    </div>
+                    <div className='col-sm-6' style={{textAlign:'right'}}>
+                    <Link to='Home' className='btn btn-info mt-3'>Home</Link>&nbsp;
+                <Link to='Register' className='btn btn-info mt-3' 
+                >Register</Link>&nbsp;
+                <Link to='Signin' className='btn btn-info mt-3' 
+                >Sign-in</Link>&nbsp;
+                    </div>
+
+
+
                 
-
-                <Link to='Home' className='btn btn-outline-info' style={{marginLeft:"870px"}}>Home</Link>
-                <Link to='Register' className='btn btn-outline-info' style={{marginLeft:"20px"}}
-                >Register</Link>
-                <Link to='Register' className='btn btn-outline-info' style={{marginLeft:"20px"}}
-                >Sign-in</Link>
+                
+               
+                
+                </div>
             </div>
         )
     }

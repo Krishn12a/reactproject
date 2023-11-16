@@ -1,0 +1,31 @@
+{
+  "login": [
+    {
+      "name": "Muthu",
+      "email": "muthu@gmail.com",
+      "password": "Muthu@123",
+      "mobile": "8754732872",
+      "address": "",
+      "gender": "M",
+      "id": 1
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "address": "",
+      "gender": "",
+      "id": 2
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "address": "",
+      "gender": "",
+      "id": 3
+    }
+  ]
+}

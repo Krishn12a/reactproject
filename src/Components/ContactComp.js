@@ -15,9 +15,9 @@ export class ContactComp extends Component {
                     <div className='card' style={{marginTop:'10px',borderRadius:'10px', width:'430px'}}>
                         <div className=' card-body '>
                         <form>
-                        <input type='text' name='email' placeholder='Enter Your Name' style={{marginTop:'10px',fontSize:'25px',width:'400px',borderRadius:'10px'}}></input><br/><br/>
+                        
                             <input type='email' name='email' placeholder='Enter Your Email' style={{marginTop:'10px',fontSize:'25px',width:'400px',borderRadius:'10px'}}></input><br/><br/>
-                            <input type='number' name='email' placeholder='Enter Your Mobile Number' style={{marginTop:'10px',fontSize:'25px',width:'400px',borderRadius:'10px'}}></input><br/><br/>
+                            
                             <textarea placeholder='Comments'  cols="40" rows="2"></textarea><br/>
                             <button type='submit' className='btn btn-outline-info' >Submit</button>
 

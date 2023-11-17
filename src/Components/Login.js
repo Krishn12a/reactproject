@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './External.css'; 
+import { useNavigate } from 'react-router-dom';
+import MenuComp from './MenuComp';
+
+
 
 const Login = () => {
-  
+    
+    const nav=useNavigate()
     const [formData, setFormData] = useState({
       useremail: '',
       userpass: '',
@@ -83,13 +88,18 @@ const Login = () => {
         const valueName = userFound.name
         if (userFound) {
           sessionStorage.setItem("user", valueName);
-          // Redirect or perform additional actions after successful login
-          // Example: window.location.href = "/dashboard";
+          
+            
+            nav("/Home")
+     
           window.alert("Login Successfully");
           setFormData({
             useremail: '',
             userpass: '',
           });
+          
+          
+          
         } else {
           window.alert("Wrong Credential");
           setFormData({
@@ -143,8 +153,10 @@ const Login = () => {
             </div>
           </div>
         </div>
+       
       </div>
     );
+
   };
   
   export default Login;

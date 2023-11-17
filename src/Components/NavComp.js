@@ -22,10 +22,10 @@ export class NavComp extends Component {
                     </div>
                     <div className='col-sm-6' style={{textAlign:'right'}}>
                     <Link to='Home' className='btn btn-info mt-3'>Home</Link>&nbsp;
-                <Link to='RgisterComp' className='btn btn-info mt-3' 
-                >Register</Link>&nbsp;
-                <Link to='Signin' className='btn btn-info mt-3' 
-                >Sign-in</Link>&nbsp;
+                    <Link to='RgisterComp' className='btn btn-info mt-3' 
+                        >Register</Link>&nbsp;
+                    <Link to='Signin' className='btn btn-info mt-3' 
+                        >Log in</Link>&nbsp;
                     </div>
 
 

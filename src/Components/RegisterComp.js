@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useNavigate } from 'react-router-dom';
 
 const Register = () => {
+    const nav = useNavigate()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -99,7 +101,7 @@ const Register = () => {
       // Make your API call or other actions here
       axios.post("http://localhost:8888/login", formData)
         .then(() => {
-          window.alert("Customer added Successfully");
+        //   window.alert("Customer added Successfully");
           setFormData({
             name: '',
             email: '',
@@ -109,11 +111,16 @@ const Register = () => {
             gender: '',
             
           });
+         
         })
         .catch((err) => {})
         .finally(() => {
           setLoading(false);
         });
+        if(window.confirm("Customer added Successfully")){
+            nav("/Signin")
+        }
+
     } else {
       // Update errors state with the new error messages
       setErrors(newErrors);

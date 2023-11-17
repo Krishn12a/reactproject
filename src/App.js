@@ -3,6 +3,7 @@ import './App.css';
 import HomeComp from './Components/HomeComp';
 import RouterComp from './Components/RouterComp';
 
+
 function App() {
   return (
     <div className="App">
@@ -21,7 +22,9 @@ function App() {
           Learn React
         </a>
       </header> */}
+      
       <RouterComp></RouterComp>
+      
     </div>
   );
 }

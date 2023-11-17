@@ -13,6 +13,10 @@ class MenuBodyComp extends Component {
                 <MobileComp></MobileComp>
                 <TvComp></TvComp>
                 <CameraComp></CameraComp>
+
+                <div>
+                    <button type='button' className='btn btn-outline-danger'>Log out</button>
+                </div>
                 
                 
             </div>

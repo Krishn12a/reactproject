@@ -7,11 +7,11 @@ import TvComp from "./Products/TvComp";
 import MobileComp from "./Products/MobileComp";
 import CameraComp from "./Products/CameraComp";
 import NavComp from "./NavComp";
-import Register from "./Register";
 import Login from "./Login";
 import AboutComp from "./AboutComp";
 import FooterComp from "./FooterComp";
 import RegisterComp from "./RegisterComp";
+import CrudComp from "./CrudComp";
 
 
 
@@ -43,6 +43,7 @@ class RouterComp extends Component {
                                 <Route path="Footer" element={<FooterComp></FooterComp>}>
                                     <Route path="About" element={<AboutComp></AboutComp>}></Route>
                                 </Route>
+                                <Route path="crud" element={<CrudComp></CrudComp>}></Route>
                                 
                             </Routes>
                             </div>

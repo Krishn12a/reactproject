@@ -19,6 +19,8 @@ export class NavComp extends Component {
                     <span className='lognme'>Grace Electronics</span>&nbsp;&nbsp;&nbsp;&nbsp;
 
                     <Link to='Menu' style={{fontSize:'x-large',textDecoration:'none',color:'#111150', fontWeight:'bold'}}><FontAwesomeIcon icon={faBars} /> Menu</Link>
+
+                    <Link to='admin'>admin</Link>
                     </div>
                     <div className='col-sm-6' style={{textAlign:'right'}}>
                     <Link to='Home' className='btn btn-info mt-3'>Home</Link>&nbsp;

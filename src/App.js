@@ -2,6 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import HomeComp from './Components/HomeComp';
 import RouterComp from './Components/RouterComp';
+import CrudComp from './Components/CrudComp';
+import Home from '../src/Crud/Laptops/Home'
+import { BrowserRouter, Routes,Route } from 'react-router-dom';
+
+
 
 
 function App() {
@@ -24,6 +29,11 @@ function App() {
       </header> */}
       
       <RouterComp></RouterComp>
+      
+    
+      
+      
+      
       
     </div>
   );

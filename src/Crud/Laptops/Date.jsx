@@ -30,9 +30,13 @@ function Date() {
                 .then((res)=>{
                     console.log(res);
                     window.alert("Updated successfully")
-                    navigate('/');
+                    navigate('home1');
                 })
                 .catch((err)=>console.log(err));
+            }
+
+            const nav=()=>{
+                navigate('home1')
             }
 
     return (
@@ -55,8 +59,10 @@ function Date() {
                         <input type="text"  name="spce" className='form-control' placeholder='Enter Specifications'
                         value={values.specifications} onChange={(e)=>setValues({...values, specifications: e.target.value})}/>
                     </div>
-                    <button className='btn btn-success'>Update</button>
-                    <Link to ="/" className='btn btn-primary ms-3'>Back</Link>
+                    <button className='btn btn-success'>Update</button><br/>
+                    <button className='btn btn-success' onClick={nav}>Back</button>
+
+                    
                 </form>
             </div>
         </div>

@@ -10,33 +10,6 @@
       "id": 1
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
-      "mobile": "",
-      "address": "",
-      "gender": "",
-      "id": 2
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "mobile": "",
-      "address": "",
-      "gender": "",
-      "id": 3
-    },
-    {
-      "name": "Muthu",
-      "email": "muthu@gmail.com",
-      "password": "mUTHU@123",
-      "mobile": "8754732872",
-      "address": "FEVG",
-      "gender": "M",
-      "id": 4
-    },
-    {
       "name": "Pradeep",
       "email": "pradeep@gmail.com",
       "password": "Pra@12345",
@@ -44,87 +17,48 @@
       "address": "Chennai",
       "gender": "",
       "id": 5
+    }
+  ],
+  "contactus": [
+    {
+      "email": "meiyalaganrk021@gmail.com",
+      "comment": "",
+      "id": 1
     },
     {
-      "name": "Pradeep",
-      "email": "pradeep@gmail.com",
-      "password": "Pra@3245",
-      "mobile": "9865986565",
-      "address": "Chennai",
-      "gender": "M",
+      "email": "meiyalaganrk021@gmail.com",
+      "comment": "",
+      "id": 2
+    },
+    {
+      "email": "meiyalaganrk021@gmail.com",
+      "comment": "",
+      "id": 3
+    },
+    {
+      "email": "pradeep@365",
+      "comment": "Hi contact me",
+      "id": 4
+    },
+    {
+      "email": "sathya@gmail.com",
+      "comment": "Hai",
+      "id": 5
+    },
+    {
+      "email": "sathya@gmail.com",
+      "comment": "",
       "id": 6
     },
     {
-      "name": "muthu",
-      "email": "muthu@gmail.com",
-      "password": "Muthu@gmail.com",
-      "mobile": "8754732872",
-      "address": "iugtuj",
-      "gender": "M",
+      "email": "sathya@gmail.com",
+      "comment": "",
       "id": 7
     },
     {
-      "name": "satya",
       "email": "muthu@gmail.com",
-      "password": "Sathya@123",
-      "mobile": "9865329865",
-      "address": "ytd",
-      "gender": "M",
+      "comment": "sdgar",
       "id": 8
-    },
-    {
-      "name": "Pradeep",
-      "email": "pradeep@gmail.com",
-      "password": "Ff@34345",
-      "mobile": "8754732872",
-      "address": "Chennai",
-      "gender": "M",
-      "id": 9
-    },
-    {
-      "name": "Muthu",
-      "email": "muthu@gmail.com",
-      "password": "Ff@53134",
-      "mobile": "8754732872",
-      "address": "Chennai",
-      "gender": "M",
-      "id": 10
-    },
-    {
-      "name": "Muthu",
-      "email": "muthu@gmail.com",
-      "password": "Ff@135425",
-      "mobile": "8754732872",
-      "address": "",
-      "gender": "M",
-      "id": 11
-    },
-    {
-      "name": "Muthu",
-      "email": "muthu@gmail.com",
-      "password": "Df@4324534",
-      "mobile": "8754732872",
-      "address": "",
-      "gender": "M",
-      "id": 12
-    },
-    {
-      "name": "Muthu",
-      "email": "muthu@gmail.com",
-      "password": "Muthu@123",
-      "mobile": "8754732872",
-      "address": "hb",
-      "gender": "M",
-      "id": 13
-    },
-    {
-      "name": "Muthu",
-      "email": "muthu@gmail.com",
-      "password": "Dd@432445",
-      "mobile": "8754732872",
-      "address": "",
-      "gender": "",
-      "id": 14
     }
   ],
   "laptops": [
@@ -391,5 +325,4 @@
       "specifications": "20.9MP Mirrorless Camera"
     }
   ]
-
 }

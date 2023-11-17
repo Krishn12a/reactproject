@@ -3,6 +3,7 @@ import AboutComp from './AboutComp'
 import { Link } from 'react-router-dom'
 import ContactComp from './ContactComp'
 import ServiceComp from './ServiceComp'
+import ContactUs from './ContactUs'
 
 export class FooterComp extends Component {
     render() {
@@ -14,7 +15,7 @@ export class FooterComp extends Component {
                             <AboutComp></AboutComp>
                         </div>
                         <div className='col-sm-4'>
-                               <ContactComp></ContactComp>
+                               <ContactUs></ContactUs>
                         </div>
                         <div className='col-sm-4'>
                                 <ServiceComp></ServiceComp>

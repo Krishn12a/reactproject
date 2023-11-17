@@ -1,7 +1,7 @@
 import { keyboard } from '@testing-library/user-event/dist/keyboard';
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, Outlet, useNavigate } from 'react-router-dom';
 
 function Home() {
     const[data,setData] = useState([])
@@ -27,7 +27,7 @@ function Home() {
            <h1>List of Laptops</h1>
            <div className='w-75 rounded bg-white border shadow p-4'>
            <div className='d-flex  justify-content-end'>
-            <Link to ="/create" className='btn btn-success'>Add ++</Link>
+            <Link to ="create" className='btn btn-success'>Add ++</Link>
            </div>
             <table className='table table-striped'>
                 <thead>
@@ -49,8 +49,8 @@ function Home() {
                             <td>{d.specifications}</td>
                             <td>
                             
-                            <Link to ={`/read/${d.id}`} className='btn tbn-sm btn-info'> Read</Link>  &nbsp;
-                             <Link to ={`/update/${d.id}`} className='btn tbn-sm btn-primary'>Edit</Link>  &nbsp;
+                            <Link to ={`read/${d.id}`} className='btn tbn-sm btn-info'> Read</Link>  &nbsp;
+                             <Link to ={`update/${d.id}`} className='btn tbn-sm btn-primary'>Edit</Link>  &nbsp;
                              <buttton onClick={()=>handleDelete(d.id)} className='btn tbn-sm btn-danger'> Delete</buttton>
                             </td>
 
@@ -61,6 +61,7 @@ function Home() {
                 </tbody>
             </table>
            </div>
+          
         </div>
     )
     

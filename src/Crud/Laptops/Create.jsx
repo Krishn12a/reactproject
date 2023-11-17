@@ -45,7 +45,7 @@ function Create() {
                         onChange={(e)=>setValues({...values, specifications: e.target.value})}/>
                     </div>
                     <button className='btn btn-success'>Submit</button>
-                    <Link to ="/" className='btn btn-primary ms-3'>Back</Link>
+                    <Link to ="home1" className='btn btn-primary ms-3'>Back</Link>
                 </form>
             </div>
         </div>

@@ -12,6 +12,11 @@ import AboutComp from "./AboutComp";
 import FooterComp from "./FooterComp";
 import RegisterComp from "./RegisterComp";
 import CrudComp from "./CrudComp";
+import Home from "../Crud/Laptops/Home"
+import Create from "../Crud/Laptops/Create";
+import Read from "../Crud/Laptops/Read";
+import Date from "../Crud/Laptops/Date";
+import AdminComp from "./AdminComp";
 
 
 
@@ -44,6 +49,15 @@ class RouterComp extends Component {
                                     <Route path="About" element={<AboutComp></AboutComp>}></Route>
                                 </Route>
                                 <Route path="crud" element={<CrudComp></CrudComp>}></Route>
+
+                                <Route path="admin" element={<AdminComp></AdminComp>}>
+                                    <Route path='home1' element={<Home></Home>}></Route>
+                                    <Route path='create' element={<Create></Create>}></Route>
+                                    <Route path="read/:id" element={<Read></Read>}></Route>
+                                    <Route path="update/:id" element={<Date></Date>}></Route>
+                                    
+                                </Route>
+                                
                                 
                             </Routes>
                             </div>

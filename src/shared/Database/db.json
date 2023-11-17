@@ -26,6 +26,15 @@
       "address": "",
       "gender": "",
       "id": 3
+    },
+    {
+      "name": "Muthu",
+      "email": "muthu@gmail.com",
+      "password": "mUTHU@123",
+      "mobile": "8754732872",
+      "address": "FEVG",
+      "gender": "M",
+      "id": 4
     }
   ]
 }

@@ -79,12 +79,17 @@ const Login = () => {
         const response = await axios.get("http://localhost:8888/login");
         const data = response.data;
   
-        const userFound = data.some((val) => val.email === uemail && val.password === upass);
-  
+        const userFound = data.find((val) => val.email === uemail && val.password === upass);
+        const valueName = userFound.name
         if (userFound) {
-          sessionStorage.setItem("user", uemail);
+          sessionStorage.setItem("user", valueName);
           // Redirect or perform additional actions after successful login
           // Example: window.location.href = "/dashboard";
+          window.alert("Login Successfully");
+          setFormData({
+            useremail: '',
+            userpass: '',
+          });
         } else {
           window.alert("Wrong Credential");
           setFormData({
@@ -94,15 +99,17 @@ const Login = () => {
         }
       } catch (error) {
         console.error("Error fetching user data:", error);
-        window.alert("Error fetching user data. Please try again later.");
+        window.alert("Wrong Credential");
       }
     };
   
     return (
-      <div >
+      <div>
         <div className="col-lg-4 mx-auto">
           <div className="card" style={{ backgroundColor: '#f0f0f0' }}>
-            <h1 style={{ textAlign: 'center' }}>Login</h1>
+            <div style={{ textAlign: 'center' }}>
+            <h1>Login</h1>
+            </div>
             <div className="card-body">
               <form className='myform' onSubmit={handleSubmit}>
                 <div className="mb-3">
@@ -128,7 +135,8 @@ const Login = () => {
                   <div className="text-danger">{errors.userpass}</div>
                 </div>
                 <div style={{ textAlign: 'center' }}>
-                  <button type='submit' className='btn btn-success mt-2'>Login        
+                  <button type='submit' className='btn btn-success mt-2' disabled={loading}>
+                    {loading ? 'Logging in...' : 'Login'}
                   </button>
                 </div>
               </form>

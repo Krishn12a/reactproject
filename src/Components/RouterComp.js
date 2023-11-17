@@ -11,6 +11,7 @@ import Register from "./Register";
 import Login from "./Login";
 import AboutComp from "./AboutComp";
 import FooterComp from "./FooterComp";
+import RegisterComp from "./RegisterComp";
 
 
 
@@ -37,7 +38,7 @@ class RouterComp extends Component {
                                     <Route path="Camera" element={<CameraComp></CameraComp>}></Route>
                                 </Route>
                                 <Route path="Home" element={<HomeComp></HomeComp>}></Route>
-                                <Route path="Register" element={<Register></Register>}></Route>
+                                <Route path="RgisterComp" element={<RegisterComp></RegisterComp>}></Route>
                                 <Route path="Signin" element={<Login></Login>}></Route>
                                 <Route path="Footer" element={<FooterComp></FooterComp>}>
                                     <Route path="About" element={<AboutComp></AboutComp>}></Route>
@@ -48,6 +49,7 @@ class RouterComp extends Component {
                             <div className='card-footer border-primary' style={{backgroundColor:'rgba(198,198,198,255)'}}>
                                 {/* <AboutComp></AboutComp> */}
                                 <FooterComp></FooterComp>
+                                
 
                             </div>
                             
